@@ -1,0 +1,104 @@
+body{
+    background-color: antiquewhite;
+}
+.hangman {
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hangman div {
+    background: black;
+    position: absolute;
+}
+
+.hangman .head {
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    height: 20%;
+    width: 25%;
+    border-radius: 50%;
+}
+
+.hangman .body {
+    top: 30%;
+    left: 45%;
+    width: 10%;
+    height: 35%;
+    border-radius: 5px;
+}
+
+.hangman .left-arm {
+    top: 40%;
+    left: 27%;
+    width: 25%;
+    height: 5%;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+}
+
+.hangman .right-arm {
+    top: 40%;
+    left: 49%;
+    width: 25%;
+    height: 5%;
+    border-radius: 5px;
+    transform: rotate(45deg);
+}
+
+.hangman .left-leg {
+    top: 65%;
+    left: 25%;
+    width: 30%;
+    height: 5%;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+}
+
+.hangman .right-leg {
+    top: 65%;
+    left: 45%;
+    width: 30%;
+    height: 5%;
+    border-radius: 5px;
+    transform: rotate(45deg);
+}
+
+.hangman.wrong-head .head {
+    background: antiquewhite;
+}
+
+.hangman.wrong-body .body {
+    background: antiquewhite;
+}
+
+.hangman.wrong-right-arm .right-arm{
+    background: antiquewhite;
+}
+
+.hangman.wrong-left-arm .left-arm{
+    background: antiquewhite;
+}
+
+.hangman.wrong-right-leg .right-leg{
+    background: antiquewhite;
+}
+
+.hangman.wrong-left-leg .left-leg{
+    background: antiquewhite;
+}
+
+#inputBox{
+    background-color:lavender;
+    border-radius: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#word-display{
+    font-size: xx-large;
+}

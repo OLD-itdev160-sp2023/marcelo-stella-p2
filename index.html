@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Marcelo Stella - Project 2</title>
+</head>
+<body>
+    <div class="hangman">
+        <div class="left-arm"></div>
+        <div class="right-arm"></div>
+        <div class="left-leg"></div>
+        <div class="right-leg"></div>
+        <div class="body"></div>
+        <div class="head"></div>
+    </div>    
+    <div id="inputBox">
+        <h1>My Hangman Game</h1>
+        <p>Guess the word by entering letters below: </p>
+        <form>
+            <button type="button" id="new-game">New Game</button>
+            <input type="text" id="guess" name="guess" maxlength="1">
+            <button type="submit">Guess</button>
+        </form>
+        <p id="message"></p>
+        <p id="word-display"></p>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
